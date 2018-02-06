@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #313131;
+  color: #000;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -438,16 +438,16 @@ a[data-fancybox] img {
 
 #profile {
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 0px 30px 0px;
   position: relative;
 }
 
 #profile .portrait {
   background-image: url('../img/portrait.jpg');
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 0%;
   background-size: cover;
 }
 
@@ -1530,4 +1530,30 @@ body.dark {
 .dark select {
   background: rgb(40, 42, 54);
   color: rgb(248, 248, 242);
+}
+
+/*------------------------------------------- */
+/* Aditions */
+
+.force-right {
+  float: right;
+}
+
+#profile h1.name{
+    font-weight: 700;
+  line-height: 0px;
+  text-align: left;
+  padding: 0px 0px 8px 0px;
+}
+#profile h3.job {
+  font-weight: 500;
+  line-height: 0px;
+  text-align: left;
+  padding: 0px;
+}
+#profile h3.employer {
+  font-weight: 500;
+  line-height: 0px;
+  text-align: left;
+  padding: 0px;
 }
