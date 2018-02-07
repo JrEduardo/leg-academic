@@ -117,7 +117,7 @@ h3.article-title a:hover {
 
 a:hover,
 a:focus {
-  color: {{ .Get "primary" }};
+  color: {{ .Get "primary_dark" }};
 }
 
 img,
@@ -438,14 +438,14 @@ a[data-fancybox] img {
 
 #profile {
   text-align: center;
-  padding: 30px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
   position: relative;
 }
 
 #profile .portrait {
   background-image: url('../img/portrait.jpg');
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   border-radius: 0%;
   background-size: cover;
@@ -484,6 +484,27 @@ a[data-fancybox] img {
 
 #profile .network-icon li:hover {
   transform: scale(1.2)
+}
+
+#profile h1.name{
+  font-weight: 700;
+  line-height: 0px;
+  /* text-align: left; */
+  padding: 0px 0px 8px 0px;
+}
+
+#profile h3.job {
+  font-weight: 500;
+  line-height: 0px;
+  /* text-align: left; */
+  padding: 0px;
+}
+
+#profile h3.employer {
+  font-weight: 500;
+  line-height: 0px;
+  /* text-align: left; */
+  padding: 0px;
 }
 
 .big-icon {
@@ -1096,6 +1117,7 @@ footer a#back_to_top i {
 
 .navbar {
   min-height: 70px !important;
+  height: 80px;
 }
 
 .navbar-default {
@@ -1141,7 +1163,25 @@ nav#navbar-main li {
 .navbar-default .navbar-nav>.active>a:hover {
   color: {{ .Get "menu_text_active" }};
   font-weight: 700;
-  background-color: transparent !important; /* Override Bootstrap. */
+  /* background-color: transparent !important; /\* Override Bootstrap. *\/ */
+  background-color: {{ .Get "menu_hover" }};
+  border-bottom: solid 9px {{ .Get "menu_text_active" }};;
+}
+
+.nav-logo {
+  float: left;
+  margin-top: 10px;
+}
+
+.nav-logo :hover {
+  transform: scale(1.1);
+}
+
+.nav-logo img {
+  display: block;
+  width: auto;
+  border-radius: 50%;
+  max-width: 100px;
 }
 
 .navbar-brand,
@@ -1534,26 +1574,6 @@ body.dark {
 
 /*------------------------------------------- */
 /* Aditions */
-
 .force-right {
   float: right;
-}
-
-#profile h1.name{
-    font-weight: 700;
-  line-height: 0px;
-  text-align: left;
-  padding: 0px 0px 8px 0px;
-}
-#profile h3.job {
-  font-weight: 500;
-  line-height: 0px;
-  text-align: left;
-  padding: 0px;
-}
-#profile h3.employer {
-  font-weight: 500;
-  line-height: 0px;
-  text-align: left;
-  padding: 0px;
 }
