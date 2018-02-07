@@ -13,11 +13,7 @@
       </button>
       {{ end }}
       <a class="nav-logo" href="{{ "/" | relLangURL }}">
-        {{- if .Site.Params.logo -}}
-        <img src="img/leg-logo.png"  alt="{{ .Site.Title }}">
-        {{- else -}}
-        {{- .Site.Title -}}
-        {{- end -}}
+        <img src="{{ "/img/leg-logo.png" | relURL }}" alt="{{ .Site.Title }}">
       </a>
     </div>
 
