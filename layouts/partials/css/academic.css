@@ -1574,6 +1574,52 @@ body.dark {
 
 /*------------------------------------------- */
 /* Aditions */
+
 .force-right {
-  float: right;
+    float: right;
+}
+
+/*------------------------------------------- */
+/* Language Changer */
+div.manage-lang {
+    float: left;
+}
+
+/* Tag <a>  */
+nav#navbar-main .lang-choose>a:hover{
+    color: {{ .Get "primary_dark" }};
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav#navbar-main .lang-choose>a:focus{
+    color: {{ .Get "primary_dark" }};
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav#navbar-main .toggle-lang>a{
+    color: {{ .Get "primary_dark" }};
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Tag <li> */
+nav#navbar-main li.toggle-lang {
+    font-size: 11px;
+    display: inline-flex;
+    padding: 30px 0px 0px 0px;
+}
+
+nav#navbar-main li.lang-choose {
+    font-size: 11px;
+    display: inline-block;
+}
+
+nav#navbar-main li.lang-choose:before {
+    content: "|";
+    margin: 0px 4px 0px 6px;
 }
