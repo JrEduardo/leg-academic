@@ -35,10 +35,18 @@
   <div class="col-xs-12 col-md-8" itemprop="description">
     <div id="profile">
       <h1 itemprop="name" class="name">{{ $.Site.Params.name }}</h1>
-      {{ with $.Site.Params.role }}
-      <h3 itemprop="jobTitle", class="job">{{ . }}</h3>
+      <!-- Needs to improve this !!! -->
+      <!-- Allow multiple languages rather than only two -->
+      {{ if eq $.Site.Language.Lang "pt" }}
+        {{ with $.Site.Params.role_pt }}
+          <h3 itemprop="jobTitle", class="job">{{ . }}</h3>
+        {{ end }}
       {{ end }}
-
+      {{ if eq $.Site.Language.Lang "en" }}
+        {{ with $.Site.Params.role_en }}
+          <h3 itemprop="jobTitle", class="job">{{ . }}</h3>
+        {{ end }}
+      {{ end }}
 
       {{/* Support legacy `organization` option. */}}
       {{ if $.Site.Params.organization }}
