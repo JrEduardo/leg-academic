@@ -50,7 +50,7 @@
   translation: Poster
 
 - id: btn_source
-  translation: Source Document
+  translation: Source files
 
 - id: btn_copy
   translation: Copy
