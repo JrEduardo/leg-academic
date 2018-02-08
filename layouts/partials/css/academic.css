@@ -1579,10 +1579,15 @@ body.dark {
     float: right;
 }
 
+div[itemprop="description"]>p {
+    text-align: justify;
+}
+
 /*------------------------------------------- */
 /* Language Changer */
 div.manage-lang {
     float: left;
+    padding-left: 10px;
 }
 
 /* Tag <a>  */
