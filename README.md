@@ -4,7 +4,7 @@
 [hugo-academic](https://github.com/gcushen/hugo-academic/) para
 incorporar a identidade do LEG às páginas pessoais de seus integrantes.
 
-[![Screenshot](https://raw.githubusercontent.com/jreduardo/leg-academic/master/drawing.png)](https://github.com/jreduardo/leg-academic/)
+[![Screenshot](https://raw.githubusercontent.com/jreduardo/leg-academic/master/images/drawing.png)](https://github.com/jreduardo/leg-academic/)
 
 ## How to use
 
